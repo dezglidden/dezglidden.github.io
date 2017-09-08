@@ -1,0 +1,581 @@
+@font-face {
+    font-family: 'museo_sans500';
+    src: url("../fonts/MuseoSans_500-webfont.eot");
+    src: url("../fonts/MuseoSans_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans_500-webfont.woff2") format("woff2"), url("../fonts/MuseoSans_500-webfont.woff") format("woff"), url("../fonts/MuseoSans_500-webfont.ttf") format("truetype"), url("../fonts/MuseoSans_500-webfont.svg#museo_sans500") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'museo_sans500_italic';
+    src: url("../fonts/MuseoSans_500_Italic-webfont.eot");
+    src: url("../fonts/MuseoSans_500_Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans_500_Italic-webfont.woff2") format("woff2"), url("../fonts/MuseoSans_500_Italic-webfont.woff") format("woff"), url("../fonts/MuseoSans_500_Italic-webfont.ttf") format("truetype"), url("../fonts/MuseoSans_500_Italic-webfont.svg#museo_sans500_italic") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'museo_slab500_italic';
+    src: url("../fonts/Museo_Slab_500italic-webfont.eot");
+    src: url("../fonts/Museo_Slab_500italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo_Slab_500italic-webfont.woff2") format("woff2"), url("../fonts/Museo_Slab_500italic-webfont.woff") format("woff"), url("../fonts/Museo_Slab_500italic-webfont.ttf") format("truetype"), url("../fonts/Museo_Slab_500italic-webfont.svg#museo_slab500_italic") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'museo_slab500';
+    src: url("../fonts/Museo_Slab_500-webfont.eot");
+    src: url("../fonts/Museo_Slab_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo_Slab_500-webfont.woff2") format("woff2"), url("../fonts/Museo_Slab_500-webfont.woff") format("woff"), url("../fonts/Museo_Slab_500-webfont.ttf") format("truetype"), url("../fonts/Museo_Slab_500-webfont.svg#museo_slab500") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url("../fonts/raleway-light-webfont.eot");
+    src: url("../fonts/raleway-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-light-webfont.woff2") format("woff2"), url("../fonts/raleway-light-webfont.woff") format("woff"), url("../fonts/raleway-light-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+h1,
+body {
+    font-family: "museo_sans500", sans-serif;
+    font-weight: 500
+}
+
+h2,
+h3,
+h4 {
+    font-family: "museo_slab500", serif;
+    font-weight: 500
+}
+
+.text-thin {
+    font-family: 'ralewaylight', sans-serif;
+    font-weight: 300
+}
+
+.tagline {
+    margin-top: 0
+}
+
+h1 {
+    margin-top: 48px;
+    margin-bottom: 0
+}
+
+h2 {
+    margin-top: 36px;
+    margin-bottom: 24px
+}
+
+h3,
+h4,
+p,
+ul {
+    margin-top: 24px;
+    margin-bottom: 24px
+}
+
+h1 {
+    font-size: 2.125em;
+    line-height: 1.41176
+}
+
+h2 {
+    font-size: 1.5625em;
+    line-height: 1.92;
+    text-align: center
+}
+
+h3 {
+    font-size: 1.25em;
+    line-height: 1.2;
+    text-align: center
+}
+
+h4,
+body {
+    font-size: 1em;
+    line-height: 1.5
+}
+
+h4,
+p {
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto
+}
+
+body {
+    -webkit-font-smoothing: antialiased
+}
+
+.site {
+    font-family: "museo_sans500", sans-serif;
+    text-decoration: none;
+    color: #03a9f4;
+    padding: 2px 4px;
+    border-bottom: 1px solid #03a9f4
+}
+
+.site:hover,
+.site:focus {
+    color: white;
+    background-color: #03a9f4;
+    text-decoration: underline;
+    transition: all 0.6s
+}
+
+@media screen and (min-width: 651px) and (max-width: 1003px) {
+    h1 {
+        margin-top: 52px;
+        margin-bottom: 0
+    }
+    h2 {
+        margin-top: 52px;
+        margin-bottom: 26px
+    }
+    h3,
+    h4,
+    p,
+    ul {
+        margin-top: 26px;
+        margin-bottom: 26px
+    }
+    h1 {
+        font-size: 2.82353em;
+        line-height: 1.08333
+    }
+    h2 {
+        font-size: 2.125em;
+        line-height: 1.52941;
+        text-align: center
+    }
+    h3 {
+        font-size: 1.5em;
+        line-height: 1.08333;
+        text-align: center
+    }
+    h4,
+    body {
+        font-size: 1.0625em;
+        line-height: 1.52941
+    }
+    p {
+        max-width: 32em;
+    }
+    .tagline {
+    	font-size: 1.16em;
+    }
+}
+
+@media screen and (min-width: 1004px) {
+    h1 {
+        margin-top: 54px;
+        margin-bottom: 0
+    }
+    h2 {
+        margin-top: 52px;
+        margin-bottom: 27px
+    }
+    h3,
+    h4,
+    p,
+    ul {
+        margin-top: 27px;
+        margin-bottom: 27px
+    }
+    h1 {
+        font-size: 2.83333em;
+        line-height: 1
+    }
+    h2 {
+        font-size: 2.5625em;
+        line-height: 1.31707;
+        text-align: center
+    }
+    h3 {
+        font-size: 1.6875em;
+        line-height: 1.125;
+        text-align: center
+    }
+    h4,
+    body {
+        font-size: 1.125em;
+        line-height: 1.5
+    }
+    h4 {
+        max-width: 31.2em;
+        width: 50%;
+        margin-left: 50%;
+        display: inline
+    }
+    p {
+        max-width: 35em
+    }
+    .tagline {
+        font-size: 1.18em
+    }
+}
+
+.block-center,
+.head-wrapper,
+.profile-img,
+.project,
+.social-links,
+footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wrapper,
+.head-wrapper,
+main,
+.project,
+[role~=complementary],
+footer {
+    width: 93.75%;
+    max-width: 1000px
+}
+
+body {
+    margin: 0;
+    padding: 0
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+.accessibility {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    overflow: hidden;
+    top: -10px
+}
+
+header {
+    border-top: 6px solid #00A6F6;
+    background: #fff url("../images/header-bg.png") 0 0 repeat;
+    padding-bottom: 24px;
+    position: relative;
+    z-index: -1
+}
+
+.head-wrapper {
+    margin-top: 32px
+}
+
+h1,
+.tagline {
+    text-align: center
+}
+
+@media screen and (max-width: 650px) {
+    .tagline {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 650px) {
+    h1,
+    .tagline {
+        float: right;
+        width: 60%;
+        margin-top: 0;
+        text-align: left
+    }
+    .head-wrapper>figure {
+        width: 30%
+    }
+}
+
+.h1:after,
+.tagline:after,
+.social-links {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.profile-img {
+    border: 2px solid white;
+    border-radius: 39px
+}
+
+@media screen and (min-width: 1004px) {
+    header {
+        padding-bottom: 27px
+    }
+    .head-wrapper {
+        max-width: 1000px;
+        position: relative;
+        min-height: 8em
+    }
+    h1,
+    .tagline,
+    figure {
+        position: absolute
+    }
+    h1 {
+        margin: 0;
+        top: 27px;
+        left: 166px
+    }
+    .tagline {
+        margin: 0;
+        top: 78px;
+        left: 169px
+    }
+    figure {
+        top: 8px;
+        left: 8px
+    }
+}
+
+main {
+    margin: -24px auto 0;
+    position: relative;
+    background-color: #fff
+}
+
+.employer {
+    font-style: italic;
+    font-size: 0.8em;
+    margin: -27px auto 41px;
+    text-align: center
+}
+
+.projects {
+    padding-top: 12px;
+    position: relative;
+    box-shadow: -12px -9px 13px -14px #ddd
+}
+
+.projects:before {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    box-shadow: 12px -9px 6px -11px #ddd;
+    z-index: -1
+}
+
+.project {
+    position: relative;
+}
+
+.project>h3 {
+    padding-bottom: 160px;
+    position: relative
+}
+
+.seperator {
+    position: relative;
+    margin-top: 72px;
+    margin-bottom: 72px
+}
+
+.seperator:before,
+.seperator:after {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    max-width: 1000px;
+    height: 1px;
+    background: #f2f2f2;
+    background: linear-gradient(to right, #f2f2f2 0%, #b5b5b5 50%, #f2f2f2 100%);
+    content: ''
+}
+
+.seperator:before {
+    top: -32px
+}
+
+.seperator:after {
+    bottom: -32px
+}
+
+@media screen and (min-width: 1004px) {
+    .project {
+        margin-bottom: 135px
+    }
+    .project>h3 {
+        padding-bottom: 0;
+        position: static;
+        width: 50%;
+        margin-left: 50%;
+        text-align: left
+    }
+    .project>h3:after {
+        position: static
+    }
+    .project>p {
+        width: 50%;
+        min-height: 203px;
+        padding-left: 50%;
+    }
+    .seperator:before {
+        top: -54px
+    }
+    .seperator:after {
+        bottom: -54px
+    }
+}
+
+[role~=complementary] {
+    margin: 36px auto
+}
+
+.social-links {
+    max-width: 32em
+}
+
+.social-item {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 16px
+}
+
+.twitter,
+.linkedin,
+.github {
+    display: block;
+    background: #fff url(../images/browsers-small.png) -4px -452px no-repeat;
+    padding: 2px 5px 2px 32px;
+    text-decoration: none;
+    border-bottom: 1px solid #4099ff
+}
+
+.twitter {
+    color: #4099ff
+}
+
+.linkedin {
+    color: #007bb6;
+    border-bottom-color: #007bb6;
+    background-position: -4px -518px
+}
+
+.github {
+    color: #333;
+    border-bottom-color: #333;
+    background-position: -4px -484px
+}
+
+.social-item>a:hover,
+.social-item>a:focus {
+    color: #fff;
+    transition: all 0.6s
+}
+
+.twitter:hover,
+.twitter:focus {
+    background-color: #4099ff;
+    background-position: -36px -452px
+}
+
+.linkedin:hover,
+.linkedin:focus {
+    background-color: #007bb6;
+    background-position: -36px -518px
+}
+
+.github:hover,
+.github:focus {
+    background-color: #333;
+    background-position: -36px -484px
+}
+
+@media screen and (min-width: 651px) and (max-width: 1003px) {
+    .twitter {
+        background-position: -4px -450px
+    }
+    .twitter:hover,
+    .twitter:focus {
+        background-position: -36px -450px
+    }
+    .linkedin {
+        background-position: -4px -518px
+    }
+    .linkedin:hover,
+    .linkedin:focus {
+        background-position: -36px -518px
+    }
+    .github {
+        background-position: -4px -484px
+    }
+    .github:hover,
+    .github:focus {
+        background-position: -36px -484px
+    }
+}
+
+@media screen and (min-width: 1004px) {
+    .social-links {
+        margin-left: 0
+    }
+    .twitter,
+    .linkedin,
+    .github {
+        padding-top: 1px
+    }
+    .twitter {
+        background-position: -4px -451px
+    }
+    .twitter:hover,
+    .twitter:focus {
+        background-position: -36px -451px
+    }
+    .linkedin {
+        background-position: -4px -519px
+    }
+    .linkedin:hover,
+    .linkedin:focus {
+        background-position: -36px -519px
+    }
+    .github {
+        background-position: -4px -485px
+    }
+    .github:hover,
+    .github:focus {
+        background-position: -36px -485px
+    }
+}
+
+@media screen and (min-width: 1004px) {
+    .date {
+        margin-left: 0
+    }
+}
+
+#modal {
+    position: absolute
+}
+
+.modal {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 4
+}
+
+#target {
+    opacity: 1;
+    z-index: 8;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    word-wrap: break-word;
+    padding: 2%
+}
