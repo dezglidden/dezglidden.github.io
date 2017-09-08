@@ -434,6 +434,20 @@ main {
     }
 }
 
+picture {
+    position: absolute;
+    top: 46px;
+    left: calc(50% - 114px);
+}
+
+@media screen and (min-width: 1004px) {
+    picture {
+        /*position: absolute;*/
+        top: 64px;
+        left: 30px;
+    }
+}
+
 [role~=complementary] {
     margin: 36px auto
 }
