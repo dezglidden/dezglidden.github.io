@@ -43,6 +43,17 @@
     font-style: normal
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?rxtr0q');
+  src:  url('../fonts/icomoon.eot?rxtr0q#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?rxtr0q') format('truetype'),
+    url('../fonts/icomoon.woff?rxtr0q') format('woff'),
+    url('../fonts/icomoon.svg?rxtr0q#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1,
 body {
     font-family: "museo_sans500", sans-serif;
@@ -114,7 +125,8 @@ p {
 }
 
 body {
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
 }
 
 .site {
@@ -125,12 +137,65 @@ body {
     border-bottom: 1px solid #03a9f4
 }
 
+.phone:hover,
 .site:hover,
 .site:focus {
     color: white;
     background-color: #03a9f4;
     text-decoration: underline;
     transition: all 0.6s
+}
+
+.contact-tel,
+.contact-call:hover {
+    text-decoration: none;
+}
+
+footer > .phone,
+footer > .phone a.contact-tel {
+    color: #03a9f4;
+}
+
+.contact-tel:hover,
+.phone a.contact-tel:hover {
+    color: white;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+
+@media screen and (max-width: 1003px) {
+    .head-wrapper > .contact {
+        display: none;
+    }    
+}
+
+.head-wrapper > .contact {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.18em;
+    line-height: 1.5;
+    margin-top: 2.4em;
+    margin-right: 22px;
+}
+
+.contact-details > a.contact-call {
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (min-width: 651px) and (max-width: 1003px) {
@@ -223,17 +288,25 @@ body {
     .tagline {
         font-size: 1.18em
     }
+    .phone {
+        margin-right: 0;
+    }
 }
 
 .block-center,
 .head-wrapper,
 .profile-img,
 .project,
-.social-links,
-footer {
+.social-links {
     display: block;
     margin-left: auto;
     margin-right: auto
+}
+
+footer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper,
@@ -261,12 +334,17 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
-.accessibility {
+.accessibility,
+.accessible-text {
     height: 1px;
     width: 1px;
     position: absolute;
     overflow: hidden;
     top: -10px
+}
+
+@media screen and (max-width) {
+
 }
 
 header {
